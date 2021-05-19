@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PPC - TP2</string>
+    <string name="txt_primero_String">Ingrese Primer Valor</string>
+    <string name="txt_segundo_String">Ingrese Segundo Valor</string>
+    <string name="buttonS">Sumar</string>
+    <string name="txt_resultado_String">Resultado</string>
+    <string name="buttonR">Restar</string>
+    <string name="buttonM">Multiplicar</string>
+    <string name="buttonD">Dividir</string>
+</resources>

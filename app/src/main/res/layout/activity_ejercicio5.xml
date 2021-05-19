@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio5_Activity">
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="626dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Analice el paquete android.accounts y las clases AccountManager, y Account.  Responda estas preguntas:  ● ¿Para qué sirve el paquete y cada clase? El paquete trae consigo clases, interfaces y excepciones para el manejo de las cuentas asociadas al dispositivo. (https://developer.android.com/reference/android/accounts/package-summary) AccountManager: esta clase provee acceso a un registro centralizado de las cuentas activas de los usuarios. El usuario ingresa sus credenciales una vez por cada cuenta que registra, garantizando así el acceso a los recursos en línea con una aprobación de un solo click. (https://developer.android.com/reference/android/accounts/AccountManager) Account: es el tipo de valor que representa a una cuenta en la clase AccountManager. (https://developer.android.com/reference/android/accounts/Account) ● ¿Qué beneficios brinda?  Soporte multi-dispositivo: el tener todos nuestros datos almacenados en la nube, nos permite cambiar de dispositivo y hasta usar dos a la vez. Siempre que haya conexión a internet tendremos nuestros datos sincronizados. Inversión del usuario: con esto podemos decir que el usuario al momento de crear su cuenta, puede personalizar que desea ver y que no o que experiencia tiene usando dispositivos y apps, con una pequeña inversión de su tiempo. Ésta “inversión” conlleva a que el usuario termine almacenando cosas de las cuales les sea difícil despegarse sentimentalmente, esto nos brinda información al momento de volver a atrapar un usuario por ejemplo con una suscripción a alguna app. Recopilación de mail/número de celular: algo muy valioso es tener la manera de comunicar con el usuario, mediante un dato que es único para cada uno; podemos darle más seguridad a su cuenta a través de estos datos. ● ¿Qué desventajas posee?  Mayor fricción: como se denominó anteriormente, crear una cuenta requiere de inversión y esto puede generar un rechazo o fricción por parte del usuario que no quiere invertir su tiempo en esto. Puede volverse tedioso al pedir gran cantidad de datos y/o permisos. Gastos generales adicionales:  Los costos de almacenamiento en la nube, la implementación y prueba de los mecanismos de recuperación de contraseñas perdidas y las precauciones de seguridad adicionales necesarias son solo algunas de las razones por las que la implementación de un modelo de cuenta no siempre debe ser un valor predeterminado automático al crear un producto móvil. Decisiones de diseño: Al diseñar el producto, el equipo debe considerar si es probable que los beneficios de implementar un sistema de cuentas de usuario superen los costos, que no son insignificantes, enumerados anteriormente. (https://phiture.com/mobilegrowthstack/user-accounts-pros-and-cons-for-mobile-growth-42847cb10f4c/)  Analice la dependencia com.android.volley:volley:1.1.1  Responda estas preguntas:  ● ¿Para qué sirve la dependencia?  Volley es una biblioteca HTTP que facilita y agiliza el uso de redes en apps para Android.  ● ¿Qué beneficios brinda?  Volley ofrece los siguientes beneficios: •	Programación automática de solicitudes de red •	Varias conexiones de red simultáneas •	Almacenamiento de respuestas en caché y en disco transparentes con coherencia de caché en HTTP estándar •	Compatibilidad con la priorización de solicitudes •	API de cancelación de solicitudes (permite cancelar una única solicitud, o bien establecer bloques o grupos de solicitudes para cancelar) •	Personalización sencilla, por ejemplo, de reintentos o retiradas •	Ordenamiento sólido que permite completar correctamente la IU con datos recuperados de forma asíncrona de la red •	Herramientas de depuración y rastreo ● ¿Que permisos requiere? INTERNET: android.permission.INTERNET - Sin este permiso, tu app no podrá conectarse a la red. "
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
